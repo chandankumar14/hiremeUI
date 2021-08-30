@@ -16,13 +16,17 @@ class Services extends React.Component {
   }).then(res => this.setState({ Technician: res.data.Category }))
       .catch(err => console.log(err))
   }
+  handleClick = (ids) => {
+    const id =  ids
+    this.props.history.push(`/filter?category_id=${id}`);
+}
   render() {
     const {Technician } = this.state;
     return (
       <div>
         <h1>Our Services</h1>
         {Technician.map((item)=>(
-          <div class="card" >
+          <div class="card" onClick={() => this.handleClick(item.category_id)} >
   <img src={item.img} class="card-img-top" alt="..." />
   <div class="card-body">
     <h5 class="card-title">{item.name}</h5>
