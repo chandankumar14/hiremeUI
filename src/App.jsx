@@ -11,6 +11,7 @@ import Sign from './Component/Sign';
 import Login from './Component/login';
 import Filter from './Component/Filter';
 import Employee from './Component/EmployeeReg';
+import Footer from './Component/Footer';
 
 const App = () =>{
   return (

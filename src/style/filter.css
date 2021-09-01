@@ -21,15 +21,45 @@ h3{
 }
 .cards {
   display: inline-block;
-  width: 450px;
+  width: 370px;
   height: 230px;
   margin: 15px;
   border: solid 1px;
-  border-color: darkslategray;
+  border-color: green;
+  border-radius: 8px;
+  margin-left: 25px;
+  background-color:floralwhite;
+
 }
 
 label{
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     color: darkslateblue;
+}
+.left,.right{
+    width: 45%;
+    display: inline-block;
+    margin: 5px;
+    height: 180px;
+}
+.use-image{
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    background-color: red;
+    border-radius: 50%;
+}
+.nodata{
+    width: 350px;
+    height: 200px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid;
+    border-color:red ;
+    margin-left: 45px;
+    margin-top: 25px;
+    border-radius: 10px;
 }

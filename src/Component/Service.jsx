@@ -1,7 +1,7 @@
 import React from "react";
 import '../style/services.css'
 import axios from 'axios';
-class Services extends React.Component {
+class  Services extends React.Component {
   constructor(){
     super();
     this.state={
@@ -26,11 +26,11 @@ class Services extends React.Component {
       <div>
         <h1>Our Services</h1>
         {Technician.map((item)=>(
-          <div class="card" onClick={() => this.handleClick(item.category_id)} >
-  <img src={item.img} class="card-img-top" alt="..." />
+          <div className="card" onClick={() => this.handleClick(item.category_id)} >
+  <img src={item.img} className="card-img-top" alt="..." />
   <div class="card-body">
-    <h5 class="card-title">{item.name}</h5>
-    <p class="card-text">{item.desc}</p>
+    <h5 className="card-title">{item.name}</h5>
+    <p className="card-text">{item.desc}</p>
     
   </div>
 </div>
